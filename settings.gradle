@@ -1,0 +1,6 @@
+include 'eureka-server'
+include 'data-service'
+include 'data-core'
+include 'view-service'
+include 'config-server'
+
