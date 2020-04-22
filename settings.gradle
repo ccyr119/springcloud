@@ -3,4 +3,7 @@ include 'data-service'
 include 'data-core'
 include 'view-service'
 include 'config-server'
+include 'hystrix-dashboard'
+include 'turbine'
+include 'zuul'
 

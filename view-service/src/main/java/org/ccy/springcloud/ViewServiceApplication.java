@@ -5,6 +5,7 @@ import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.NumberUtil;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -22,6 +23,7 @@ import java.util.concurrent.TimeoutException;
 @EnableEurekaClient
 @EnableDiscoveryClient
 @EnableFeignClients
+@EnableCircuitBreaker
 public class ViewServiceApplication {
     public static void main(String[] args) {
         int defaultPort = 8010;
